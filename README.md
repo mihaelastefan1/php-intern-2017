@@ -12,12 +12,12 @@ The following are required:
 
 ### Quick git clone guide:
 
-1. Create GitHub Account
+1. Create a GitHub Account
 2. Go to https://github.com/RowebDev/php-intern-2017
-2. Click the fork button in the upper-right corner
-3. Go to https://github.com/[username]?tab=repositories ([username] is your GitHub username)
-4. Click on the repo "php-intern-2017"
-5. Click "Clone or download" and copy the URL
-6. Open Sourcetree and go to File -> Clone/New
-7. Paste the repo URL in the *Source Path* (first input), fill in the *Destination Path* (root folder of the project) and give the project a *Name*
-8. Click Clone
+3. Click the fork button in the upper-right corner
+4. Go to https://github.com/[username]?tab=repositories ([username] is your GitHub username)
+5. Click on the repo "php-intern-2017"
+6. Click "Clone or download" and copy the URL
+7. Open Sourcetree and go to File -> Clone/New
+8. Paste the repo URL in the *Source Path* (first input), fill in the *Destination Path* (root folder of the project) and give the project a *Name*
+9. Click Clone
