@@ -18,8 +18,7 @@ The following are required:
 4. Go to https://github.com/[username]?tab=repositories ([username] is your GitHub username)
 5. Click on the repo "php-intern-2017"
 6. Click "Clone or download" and copy the URL
-7. Clone on local machine
+7. Clone on local machine *[see Method #1](https://confluence.atlassian.com/sourcetreekb/clone-a-repository-into-sourcetree-780870050.html)
 	1. Open Sourcetree and go to File -> Clone/New 
 	2. Paste the repo URL in the *Source Path* (first input), fill in the *Destination Path* (root folder of the project) and give the project a *Name*
 	3. Click Clone
-	4. [or use Use Method #1] (https://confluence.atlassian.com/sourcetreekb/clone-a-repository-into-sourcetree-780870050.html)
