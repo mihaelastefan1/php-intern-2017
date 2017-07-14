@@ -1,6 +1,6 @@
 # Roweb Summer Internship 2017
 
-This is a step-by-step guide on how to work with this project
+This is a step-by-step guide on how to work with this project.
 
 ### Prerequisites
 
