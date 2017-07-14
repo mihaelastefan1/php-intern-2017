@@ -1,4 +1,4 @@
-# Roweb Summer Intership 2017
+# Roweb Summer Internship 2017
 
 This is a step-by-step guide on how to work with this project
 
