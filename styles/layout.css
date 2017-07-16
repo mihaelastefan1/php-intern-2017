@@ -74,12 +74,12 @@ blockquote:after, q:after{content:' „'; font-size:26px; line-height:0;}
 #header #hgroup h1{font-size:36px;}
 #header #hgroup h2{font-size:13px;}
 
-#header nav{display:block; float:right; margin:20px 0 0 0; padding:20px 10px; border-top:1px solid #DEDEDE; border-bottom:1px solid #DEDEDE;}
+#header nav{display:block; float:right; margin:10px 0 0 0; padding:10px 10px; border-top:1px solid #DEDEDE; border-bottom:1px solid #DEDEDE;}
 #header nav ul{}
 #header nav li{display:inline; margin-right:25px; text-transform:uppercase;}
 #header nav li.last{margin-right:0;}
 #header nav li a{}
-#header nav li a:hover{color:#FF9900; background-color:#FFFFFF;}
+#header nav li a:hover{color:#FF9900; }
 
 /*----------------------------------------------Content Area-------------------------------------*/
 
@@ -91,7 +91,7 @@ blockquote:after, q:after{content:' „'; font-size:26px; line-height:0;}
 /* ------Slider-----*/
 
 #container #slider{}
-#container #slider a{display:block; padding:9px; border:1px solid #DEDEDE;}
+#container #slider a{}
 #container #slider a:hover{border-color:#FF9900;}
 
 /* ------Homepage-----*/
@@ -105,27 +105,200 @@ blockquote:after, q:after{content:' „'; font-size:26px; line-height:0;}
 
 /*----------------------------------------------Footer-------------------------------------*/
 
+.container{
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+/* ------our new css-----*/
+ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+ul.tabs li{
+	background: #ededed;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+ul.tabs li.current{
+	background: #ededed;
+    color: #222;
+    border: 1px solid #FF9900;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: -1px;
+}
+
+.tab-content{
+	display: none;
+	background: #ededed;
+	padding: 15px;
+}
+
+.tab-content.current{
+	display: inherit;
+	background: #ededed;
+    padding: 15px;
+    border: 1px solid #FF9900;
+}
+.target.active{
+	color: #FF9900;
+    background-color: #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.product{
+	height:150px;
+	width:175px;
+	border:1px solid;
+	margin-right:10px;
+	float:left;
+	margin-top:10px;
+	text-align:center;
+}
+
+.product.last{
+	margin-right:0px;
+}
+.product img {
+	border-radius: 50%;
+    margin-top: 10px;
+    padding: 2px;
+    border: 1px solid;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/* ------Form-----*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+}
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #FF9900;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #FF9900;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}
+
+
 #footer{padding:20px 0;}
 #footer p{margin:0; padding:0;}
 
-/*----------------------------------------------Our custom css-------------------------------------*/
-
-.slider{
-	width: 100%;
-	display:block;
-	margin-bottom:30px;
-}
-
-.slider a{
-	border: 1px solid black;
-	display:block;
-	padding: 9px;
-}
-
-.slider a:hover{
-	border-color: #FF9900;
-}
-
-.slider img{
-	vertical-align:middle;
+@media only screen and (max-width: 768px){
+	.one_third{
+		width:100%;
+	}
 }
