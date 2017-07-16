@@ -22,3 +22,6 @@ The following are required:
 	1. Open Sourcetree and go to File -> Clone/New 
 	2. Paste the repo URL in the *Source Path* (first input), fill in the *Destination Path* (XAMPP htdocs folder) and give the project a *Name*
 	3. Click Clone
+8. Make your edits on your local copy and when finished, commit and push them in Sourcetree.
+
+See you on Friday ;)
