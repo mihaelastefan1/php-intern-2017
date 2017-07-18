@@ -41,7 +41,7 @@ div.wrapper{display:block; width:960px; margin:0 auto; padding:0; text-align:lef
 
 .row1, .row1 a{color:#979797; background-color:#FFFFFF;}
 .row2{color:#979797; background-color:#FFFFFF;}
-.row2 a{color:#FF9900; background-color:#FFFFFF;}
+.row2 a{color:#ff0042; background-color:#FFFFFF;}
 .row3{border-top:1px solid #DEDEDE;}
 .row3, .row3 a{color:#979797; background-color:#FFFFFF;}
 
@@ -193,7 +193,25 @@ form {
   background: #f4f7f8;
   border-radius: 8px;
 }
-
+.login_form{
+    background: black;
+	top: 50%;
+	left: 50%;
+	padding: 20px;
+    border-radius: 5px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 480px;
+}
+.header_login{
+    color:white;
+}
+.field_label{
+   color:white; 
+}
+#input_design_login{
+	background-color:white;
+}
 h1 {
   margin: 0 0 30px 0;
   text-align: center;
