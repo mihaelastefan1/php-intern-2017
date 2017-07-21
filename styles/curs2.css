@@ -1,0 +1,10 @@
+/* curs 2 */
+#login_form{
+	background-color:#000;
+}
+#login_form fieldset{
+	margin-bottom: 0;
+}
+#login_form h1, #login_form legend, #login_form label{
+	color:#fff;
+}

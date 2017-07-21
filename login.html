@@ -38,44 +38,20 @@
     
 	<div class="container">
 
-	<form action="index.html" method="post">
+	<form action="index.html" method="post" id="login_form">
       
-        <h1>Add a product</h1>
+        <h1>Login</h1>
         
         <fieldset>
-          <legend>Product Details</legend>
-          <label for="name"> Product Name:</label>
-          <input type="text" id="name" name="product_name">
-		  
-		  <label for="decription"> Description:</label>
-		  <textarea id="decription" name="product_name"></textarea>
-   
-          <label>Favorite:</label>
-          <input type="radio" id="favorite-yes" value="favorite" name="favorite_product"><label for="favorite-yes" class="light">Yes</label><br>
-          <input type="radio" id="favorite-no" value="" name="favorite_product"><label for="favorite-no" class="light">No</label>
+			<legend>Please fill in your details</legend>
+			<label for="name">Product Name:</label>
+			<input type="text" id="login_email" name="login_email">
+
+			<label for="decription">Description:</label>
+			<input type="password" id="login_password" name="login_password">
         </fieldset>
-       
-        <fieldset>
-			<label for="job">Category:</label>
-			<select id="job" name="user_job">
-			  <optgroup label="First">
-				<option value="">tech</option>
-				<option value="funny">funny</option>
-				<option value="gadget">gadget</option>
-			  </optgroup>
-			  <optgroup label="Second">
-				<option value="">somthing</option>
-				<option value="funny">funny</option>
-				<option value="gadget">gadget</option>
-			  </optgroup>
-			  <optgroup label="Third">
-				<option value="">else</option>
-				<option value="funny">funny</option>
-				<option value="gadget">gadget</option>
-			  </optgroup>
-			</select>
-        </fieldset>
-        <button type="submit">Add Product</button>
+		
+        <button type="submit">Login</button>
       </form>
 	</div><!-- container -->
 

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-<title>Basic 77</title>
+<title>Roweb</title>
 <meta charset="iso-8859-1">
 <link rel="stylesheet" href="styles/layout.css" type="text/css">
+<link rel="stylesheet" href="styles/curs2.css" type="text/css">
 <link rel="stylesheet" href="styles/jquery.bxslider.css" type="text/css">
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,20 +17,17 @@
 <div class="wrapper row1">
   <header id="header" class="clear">
     <div id="hgroup">
-      <h1><a href="#">Basic 77</a></h1>
-      <h2>
-		<?php echo 'asdasdasd'; ?></h2>
+      <h1><a href="#">Roweb</a></h1>
+      <h2>Internship Program</h2>
     </div>
-    <nav class="custom-menu">
+    <nav>
       <ul>
-        <li><a class="target" href="#">Text Link</a></li>
-        <li><a class="target" href="#">Text Link</a></li>
-        <li><a class="target" href="#">Text Link</a></li>
-        <li><a class="target" href="#">Text Link</a></li>
-        <li class="last"><a class="target" href="#">Text Link</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/products.html">Products</a></li>
+        <li><a href="/add-product.html">Add product</a></li>
+        <li><a href="/login.html">Login</a></li>
       </ul>
     </nav>
-	
   </header>
 </div>
 <!-- content -->
@@ -42,15 +40,12 @@
 		  <li><img src="https://wallpaperscraft.com/image/abstraction_geometry_shapes_colors_93400_1920x1080.jpg" /></li>
 		  <li><img src="https://wallpaperscraft.com/image/abstraction_geometry_shapes_colors_93400_1920x1080.jpg" /></li>
 		  <li><img src="https://wallpaperscraft.com/image/abstraction_geometry_shapes_colors_93400_1920x1080.jpg" /></li>
-		  <li><img src="https://wallpaperscraft.com/image/abstraction_geometry_shapes_colors_93400_1920x1080.jpg" /></li>
-		  
+		  <li><img src="https://wallpaperscraft.com/image/abstraction_geometry_shapes_colors_93400_1920x1080.jpg" /></li>		  
 		</ul>
-	</div>
-    
+	</div>    
   </div>
   
 	<div class="container">
-
 		<ul class="tabs">
 			<li class="tab-link current" data-tab="tab-1">Tab One</li>
 			<li class="tab-link" data-tab="tab-2">Tab Two</li>
@@ -191,33 +186,34 @@
   </footer>
 </div>
 <script>
-$(function(){
-	$('.bxslider').bxSlider({
-		mode: 'horizontal',
-		moveSlides: 1,
-		slideMargin: 40,
-		infiniteLoop: true,
-		slideWidth: 660,
-		minSlides: 3,
-		maxSlides: 3,
-		speed: 800,
-	});
-	
-	$('ul.tabs li').click(function(){
-		var tab_id = $(this).attr('data-tab');
+	$(function(){
+		$('.bxslider').bxSlider({
+			mode: 'horizontal',
+			moveSlides: 1,
+			slideMargin: 40,
+			infiniteLoop: true,
+			slideWidth: 660,
+			minSlides: 3,
+			maxSlides: 3,
+			speed: 800,
+		});
+		
+		$('ul.tabs li').click(function(){
+			var tab_id = $(this).attr('data-tab');
 
-		$('ul.tabs li').removeClass('current');
-		$('.tab-content').removeClass('current');
+			$('ul.tabs li').removeClass('current');
+			$('.tab-content').removeClass('current');
 
-		$(this).addClass('current');
-		$("#"+tab_id).addClass('current');
+			$(this).addClass('current');
+			$("#"+tab_id).addClass('current');
+		});
+		
+		$(document).on('click', '.custom-menu .target', function (e) {
+			$('.custom-menu').find('.active').removeClass('active');
+			$(this).addClass('active');
+		});
 	});
-	
-	$(document).on('click', '.custom-menu .target', function (e) {
-		$('.custom-menu').find('.active').removeClass('active');
-		$(this).addClass('active');
-	});
-});
 </script>
+
 </body>
 </html>
