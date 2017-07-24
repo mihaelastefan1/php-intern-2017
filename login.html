@@ -3,13 +3,43 @@
 <head>
 <title>Roweb</title>
 <meta charset="iso-8859-1">
+
 <link rel="stylesheet" href="styles/layout.css" type="text/css">
 <link rel="stylesheet" href="styles/curs2.css" type="text/css">
+<style>
+	h1 {
+		margin: 20px 0;
+	}
+</style>
 <link rel="stylesheet" href="styles/jquery.bxslider.css" type="text/css">
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="scripts/jquery.bxslider.js"></script>
+
+<script>
+	$(function(){
+		//document.getElementById("login_heading").innerHTML = "Please log in";
+		
+		//var elementul1, elementul2,  titlu;
+		
+		//elementul1 = $(".login_heading");
+		//elementul2 = $("#subtitle");
+		
+
+		changeTitle($(".login_heading"), $(".login_heading").html());
+		changeTitle($("#subtitle"), $("#subtitle").html());
+		
+	
+		function changeTitle(elementul, titlu)
+		{
+			titlu = titlu + " sufix";
+			elementul.html(titlu);
+		}
+	});
+</script>
+
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
 </head>
@@ -37,22 +67,20 @@
     
     
 	<div class="container">
+		<form action="login.php" method="get" id="login_form">
+			<h1 class="login_heading">Login</h1>
 
-	<form action="index.html" method="post" id="login_form">
-      
-        <h1>Login</h1>
-        
-        <fieldset>
-			<legend>Please fill in your details</legend>
-			<label for="name">Product Name:</label>
-			<input type="text" id="login_email" name="login_email">
+			<fieldset>
+				<legend id="subtitle">Please fill in your details</legend>
+				<label for="login_email">Username / Email:</label>
+				<input type="text" id="login_email" name="email">
 
-			<label for="decription">Description:</label>
-			<input type="password" id="login_password" name="login_password">
-        </fieldset>
-		
-        <button type="submit">Login</button>
-      </form>
+				<label for="login_password">Password:</label>
+				<input type="password" id="login_password" name="pass">
+			</fieldset>
+			
+			<button type="submit">Login</button>
+		</form>
 	</div><!-- container -->
 
 </div>
@@ -63,34 +91,7 @@
     <p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
   </footer>
 </div>
-<script>
-$(function(){
-	$('.bxslider').bxSlider({
-		mode: 'horizontal',
-		moveSlides: 1,
-		slideMargin: 40,
-		infiniteLoop: true,
-		slideWidth: 660,
-		minSlides: 3,
-		maxSlides: 3,
-		speed: 800,
-	});
-	
-	$('ul.tabs li').click(function(){
-		var tab_id = $(this).attr('data-tab');
 
-		$('ul.tabs li').removeClass('current');
-		$('.tab-content').removeClass('current');
 
-		$(this).addClass('current');
-		$("#"+tab_id).addClass('current');
-	});
-	
-	$(document).on('click', '.custom-menu .target', function (e) {
-		$('.custom-menu').find('.active').removeClass('active');
-		$(this).addClass('active');
-	});
-});
-</script>
 </body>
 </html>
