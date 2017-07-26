@@ -1,0 +1,26 @@
+/* curs 2 */
+
+
+/* If desktop */
+@media only screen and (min-width: 768px){
+	h1{
+		font-size:24px;
+	}
+	form{
+		background-color:#000;
+	}
+	form fieldset{
+		margin-bottom: 0;
+	}
+	form h1, form legend, form label{
+		color:#fff;
+	}
+}
+
+/* If mobile */
+@media only screen and (max-width: 768px){
+
+	h1{
+		font-size:18px;
+	}
+}
