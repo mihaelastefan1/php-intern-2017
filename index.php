@@ -1,28 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-<title>Roweb</title>
-<meta charset="iso-8859-1">
-<link rel="stylesheet" href="styles/layout.css" type="text/css">
-<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
-</head>
-<body>
-<div class="wrapper row1">
-  <header id="header" class="clear">
-    <div id="hgroup">
-      <h1><a href="#">Roweb</a></h1>
-      <h2>Stefan Elena - Mihaela</h2>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="add-product.html">Add Products</a></li>
-        <li class="last"><a href="login.html">Login</a></li>
-      </ul>
-    </nav>
-  </header>
-</div>
+<?php include 'C:\xampp\htdocs\lib\header.php'; ?>
+    
 <!-- content -->
 <div class="wrapper row2">
   <div id="container" class="clear">
@@ -53,12 +32,8 @@
     </section>
   </div>
 </div>
+
 <!-- footer -->
-<div class="wrapper row3">
-  <footer id="footer" class="clear">
-    <p class="fl_left">Copyright &copy; - All Rights Reserved - <a href="#"></a></p>
-    <p class="fl_right"><a href="http://www.roweb.ro/" title="Free Website Templates">Our First Template</a></p>
-  </footer>
-</div>
+<?php include 'C:\xampp\htdocs\lib\footer.php'; ?>
 </body>
 </html>
